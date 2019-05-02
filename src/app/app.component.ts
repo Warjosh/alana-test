@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  ejer1 = false;
+  ejer2 = false;
+  ocultar (item) {
+    if (item === 1) { this.ejer1 = true; }
+    if (item === 2) { this.ejer2 = true; }
+  }
 }

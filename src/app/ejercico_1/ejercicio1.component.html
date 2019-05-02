@@ -1,0 +1,14 @@
+<h4 class="text-center">Ejercicio 1</h4>
+<br>
+<div class="form-label-group">
+  <input type="number" class="form-control" placeholder="Valor inicial" [(ngModel)]="init" required >
+  <br>
+  <input type="number" class="form-control" placeholder="Valor Final" [(ngModel)]="end" required>
+  <br>
+  <button class="btn  btn-success" type="button" style="margin-left: 30%;padding-left: 50px; padding-right: 50px;"  [disabled]="init == undefined || init == '' || end == undefined || end == ''" (click)="cuadradoPerfecto(init, end)">Ingresar</button>
+  <br>
+  <div class="row" *ngFor="let item of list" > 
+    {{item.value}}
+  </div>
+</div>
+<br>

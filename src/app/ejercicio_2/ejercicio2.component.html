@@ -1,0 +1,9 @@
+<p>Ejercicio 2</p>
+<br>
+<div class="form-label-group">
+    <input type="url" class="form-control" placeholder="Url para servicio get" [(ngModel)]="url" required >
+    <br>
+    <button class="btn  btn-success" type="button" style="margin-left: 30%;padding-left: 55px; padding-right: 55px;"  [disabled]="url == undefined || url == ''" (click)="Llamar(url)">Llamar</button>
+    <br>
+  </div>
+  <br>
